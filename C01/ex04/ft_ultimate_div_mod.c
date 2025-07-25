@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/23 18:56:38 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/07/24 21:23:40 by nfiamma          ###   ########.fr       */
+/*   Created: 2025/07/24 23:08:13 by nfiamma           #+#    #+#             */
+/*   Updated: 2025/07/24 23:35:15 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_swap(int *a, int *b)
-{
-	int	temp;
-	
-	temp = *a;
-	*a = *b;
-	*b = *a;
-}
-int	main(void)
-{
-	int	v1;
-	int	v2;
+// #include <stdio.h>
 
-	v1 = 4;
-	v2 = 2;
+void	ft_ultimate_div_mod(int *a, int *b)
+{
+	int	result = *a / *b;
+	int	rest = *a % *b;
+
+	*a = result;
+	*b = rest;
+}
+
+/* int	main(void)
+{
+	int	v1 = 45;
+	int	v2 = 5;
 	int	*a = &v1;
 	int	*b = &v2;
 
-	ft_swap(a, b);
-	return(0);
-}
+	ft_ultimate_div_mod(a, b);
+
+	printf("El resultado de la division es %d y el resto %d", *a, *b);
+	return 0;
+}*/
