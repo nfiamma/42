@@ -1,36 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
+/*   By: nfiamma <nfiamma@student.42barcelona.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/25 21:15:40 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/09/27 14:10:56 by nfiamma          ###   ########.fr       */
+/*   Created: 2025/09/27 14:43:20 by nfiamma           #+#    #+#             */
+/*   Updated: 2025/09/27 15:05:57 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
-//#include <stdio.h>
+#include <unistd.h>
 
-int	ft_strlen(char *str)
+void	ft_putchar(char c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
+	write(1, &c, 1);
 }
 
-/* int	main(void)
+int	main(int argc, char **argv)
 {
-	int i;
-	char str[9] = "School42";
+	int	i;
+	int	n;
 
-	i = ft_strlen(str);
-	printf("El string %s tiene %d caracteres\n", str, i);
-	return (0);
-} */
+	i = 1;
+	while (i < argc)
+	{
+		n = 0;
+		while (argv[i][n])
+		{
+			ft_putchar(argv[i][n]);
+			n++;
+		}
+		ft_putchar('\n');
+		i++;
+	}
+}

@@ -1,36 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
+/*   By: nfiamma <nfiamma@student.42barcelona.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/25 21:15:40 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/09/27 14:10:56 by nfiamma          ###   ########.fr       */
+/*   Created: 2025/09/27 14:25:42 by nfiamma           #+#    #+#             */
+/*   Updated: 2025/09/27 14:40:05 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
-//#include <stdio.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int	ft_strlen(char *str)
+int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (s1[i] == s2[i] && s1[i])
 	{
 		i++;
 	}
-	return (i);
+	return (s1[i] - s2[i]);
 }
 
 /* int	main(void)
 {
-	int i;
-	char str[9] = "School42";
+	char	*s1 = "hola";
+	char	*s2 = "Hola";
 
-	i = ft_strlen(str);
-	printf("El string %s tiene %d caracteres\n", str, i);
-	return (0);
+	printf("Funcion original: %d\n", strcmp(s1, s2));
+	printf("Recreacion de funcion: %d\n", ft_strcmp(s1, s2));
 } */
