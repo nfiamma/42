@@ -6,7 +6,7 @@
 /*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 21:15:40 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/09/25 22:28:17 by nfiamma          ###   ########.fr       */
+/*   Updated: 2025/09/27 12:59:53 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 
 int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while(str[i])
+	while (str[i])
 	{
 		i++;
 	}
-	return(i);
+	return (i);
 }
 
 /* int	main(void)

@@ -6,7 +6,7 @@
 /*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 22:17:08 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/09/23 22:23:54 by nfiamma          ###   ########.fr       */
+/*   Updated: 2025/09/27 12:56:38 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_is_negative(int n)
 {
-	if(n < 0)
+	if (n < 0)
 	{
 		write(1, "N", 1);
 	}

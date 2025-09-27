@@ -6,7 +6,7 @@
 /*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/24 20:11:07 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/09/24 20:21:38 by nfiamma          ###   ########.fr       */
+/*   Updated: 2025/09/27 12:57:53 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_swap(int *a, int *b)
 {
-	int tmp;
+	int	tmp;
 
 	tmp = *a;
 	*a = *b;

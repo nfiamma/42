@@ -6,7 +6,7 @@
 /*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/25 20:57:56 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/09/25 21:02:02 by nfiamma          ###   ########.fr       */
+/*   Updated: 2025/09/27 12:59:02 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr(char *str)
 {
-	while(*str)
+	while (*str)
 	{
 		write(1, &(*str++), 1);
 	}

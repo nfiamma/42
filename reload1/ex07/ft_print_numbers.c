@@ -6,7 +6,7 @@
 /*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 22:09:56 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/09/23 22:25:13 by nfiamma          ###   ########.fr       */
+/*   Updated: 2025/09/27 12:55:56 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_print_number(void)
 	char	num;
 
 	num = '0';
-	while(num <= '9')
+	while (num <= '9')
 	{
 		write(1, &num, 1);
 		num++;
