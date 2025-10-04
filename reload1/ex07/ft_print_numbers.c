@@ -6,20 +6,20 @@
 /*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 22:09:56 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/09/27 12:55:56 by nfiamma          ###   ########.fr       */
+/*   Updated: 2025/10/04 16:45:05 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
-void	ft_print_number(void)
+void	ft_print_numbers(void)
 {
 	char	num;
 
 	num = '0';
 	while (num <= '9')
 	{
-		write(1, &num, 1);
+		ft_putchar(num);
 		num++;
 	}
 }

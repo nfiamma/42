@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_count_if.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
+/*   By: nfiamma <nfiamma@student.42barcelona.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/25 20:57:56 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/10/04 16:41:16 by nfiamma          ###   ########.fr       */
+/*   Created: 2025/10/04 18:10:49 by nfiamma           #+#    #+#             */
+/*   Updated: 2025/10/04 18:13:13 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
-
-void	ft_putstr(char *str)
+int	ft_count_if(char **tab, int (*f)(char*))
 {
-	while (*str)
+	int	i;
+	int	count;
+
+	i = 0;
+	count = 0;
+	while (tab[i])
 	{
-		ft_putchar(*str);
-		str++;
+		if (f(tab[i]) == 1)
+			count++;
+		i++;
 	}
+	return (count);
 }

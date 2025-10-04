@@ -6,20 +6,20 @@
 /*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/23 22:17:08 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/09/27 12:56:38 by nfiamma          ###   ########.fr       */
+/*   Updated: 2025/10/04 16:25:11 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
 	if (n < 0)
 	{
-		write(1, "N", 1);
+		ft_putchar('N');
 	}
 	else
 	{
-		write(1, "P", 1);
+		ft_putchar('P');
 	}
 }
