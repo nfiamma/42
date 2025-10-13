@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nfiamma <nfiamma@student.42barcelona.      +#+  +:+       +#+        */
+/*   By: nfiamma <nfiamma@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/07 19:00:58 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/10/13 17:06:01 by nfiamma          ###   ########.fr       */
+/*   Created: 2025/10/09 14:39:24 by nfiamma           #+#    #+#             */
+/*   Updated: 2025/10/13 16:42:51 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
-# include <stdlib.h>
-# include <stddef.h>
-# include <limits.h>
-
-/*(Prototipos de funciones abajo:)*/
-int ft_isalpha(int c);
-
-#endif
+int ft_isalpha(int c)
+{
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	return (0);
+}

@@ -1,5 +1,5 @@
 NAME = libft.a
-SRC_FILES =
+SRC_FILES = ft_isalpha.c
 OBJS = $(SRC_FILES:.c=.o)
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
