@@ -6,7 +6,7 @@
 /*   By: nfiamma <nfiamma@student.42barcelona.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 19:00:58 by nfiamma           #+#    #+#             */
-/*   Updated: 2025/10/13 17:40:26 by nfiamma          ###   ########.fr       */
+/*   Updated: 2025/10/14 22:35:48 by nfiamma          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int	ft_isdigit(int c);
 int	ft_isalnum(int c);
 int	ft_isascii(int c);
 int	ft_isprint(int c);
+size_t	ft_strlen(const char *s);
 
 #endif
